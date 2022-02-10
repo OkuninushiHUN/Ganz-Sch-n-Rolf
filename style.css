@@ -1,9 +1,4 @@
 
-#jobb{
-  float: right;
-}
-
-
 .purple{
   color: purple;
 }
@@ -32,27 +27,39 @@
   font-size:200px; 
 }
 
-#kep{
-  height: 100vw;
-  padding: 0px;
-  max-height: 100vh;
-  float: left;
-}
+
 body{
   margin: 0px;
   padding: 0px;
-  display: block;
   background: black;
+  display: block;
+  
+
 }
-#kep, canvas{
+#kep{
   position:absolute;
   float: left;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  outline: none !important;
   padding: 0px;
   height:100vw;
   max-height: 100vh;
+  outline: none !important;
 }
+
+.iras{
+  color: black;
+  position: absolute;
+  z-index: 99999;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3.1vw;
+}
+
+#jobb{
+  float: right;
+  position: relative;
+}
+

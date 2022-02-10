@@ -36,7 +36,7 @@ class Purple {
     this.pelemek = [-7, 7];
     this.teli = false;
   }
-  hozzaadas(select) {
+  hozzaadas(coordinate) {
     if ((select[1] == 'purple' || select[1] == 'white') && (this.teli == false && this.pelemek[-1] >= select[0])) {
 
       this.elemek.push(select[0]);
@@ -44,7 +44,7 @@ class Purple {
         this.teli = true;
         this.elemek.push(12);
       }
-      return;
+      return beiras(coordinate);
     }
     else {
       return select;
@@ -64,9 +64,10 @@ class Green {
     this.zelemek = [];
     this.teli = false;
   }
-  hozzaadas(select) {
+  hozzaadas(coordinate) {
     if ((select[1] == 'green' || select[1] == 'white') && (this.teli == false && select[0] % 2 == this.zelemek.length + 1)) {
       this.zelemek.push(select[0]);
+      xeles(coordinate);
     }
     else {
       return select;
@@ -79,13 +80,15 @@ class Gray {
     this.gelemek = [];
     this.gszinek = [];
   }
-  hozzaadas(select) {
+  hozzaadas(coordinate) {
+    console.log(coordinate);
     if (!this.gelemek.includes(select[1]) && !this.gszinek.includes(select[0])) {
       this.gelemek.push = select[0];
       this.gszinek.push = select[1];
+      return beiras(coordinate);
     }
     else {
-      return select;
+      return;
     }
   }
   pontozas() {
@@ -98,10 +101,11 @@ class Blue {
   constructor() {
     this.belemek = [];
   }
-  hozzaadas(select) {
+  hozzaadas(coordinate) {
     let x = dkocka3.ertek + dkocka2.ertek;
     if (!this.belemek.includes(x) && (select[1] == 'blue' || select[1] == 'white')) {
-      return this.belemek.push(x);
+      this.belemek.push(x);
+      xeles(coordinate);
     }
     return select;
   }
@@ -114,7 +118,7 @@ class Orange {
     this.jorange = [];
     this.teli = false;
   }
-  hozzaadas(select) {
+  hozzaadas(coordinate) {
     if (select[0] != 'orange' && select[0] != 'white') {
       return select;
     }
@@ -139,7 +143,7 @@ class Yellow {
     this.sor32 = 0;
     this.sor41 = 0;
   }
-  hozzaadas(){
+  hozzaadas(coordinate){
     
   }
 
@@ -147,3 +151,5 @@ class Yellow {
 
 
 }
+
+
