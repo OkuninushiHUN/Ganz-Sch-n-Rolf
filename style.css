@@ -1,0 +1,58 @@
+
+#jobb{
+  float: right;
+}
+
+
+.purple{
+  color: purple;
+}
+
+.green{
+  color: green
+}
+
+.narancs{
+  color: orange;
+}
+
+.yellow{
+  color: yellow
+}
+
+.blue{
+  color:rgba(0, 195, 255, 0.986);
+}
+
+.fas{
+  font-size: 80px;
+}
+
+.select{
+  font-size:200px; 
+}
+
+#kep{
+  height: 100vw;
+  padding: 0px;
+  max-height: 100vh;
+  float: left;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  background: black;
+}
+#kep, canvas{
+  position:absolute;
+  float: left;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: none !important;
+  padding: 0px;
+  height:100vw;
+  max-height: 100vh;
+}
