@@ -32,12 +32,13 @@ body{
   margin: 0px;
   padding: 0px;
   background: black;
-  display: block;
-  
-
+  min-height: 100vh;
 }
+
+
+
 #kep{
-  position:absolute;
+  position:relative;
   float: left;
   top: 0;
   bottom: 0;
@@ -47,6 +48,7 @@ body{
   height:100vw;
   max-height: 100vh;
   outline: none !important;
+  overflow: hidden;
 }
 
 .iras{
@@ -55,11 +57,21 @@ body{
   z-index: 99999;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 3.1vw;
+  font-size: 3vw;
 }
 
 #jobb{
   float: right;
   position: relative;
+  overflow: hidden;
 }
 
+#doboz{
+  display:flex;
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+h1{
+  color:white;
+}
